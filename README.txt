@@ -3,8 +3,8 @@ Contributors: elklab
 Donate link: https://www.elk-lab.com
 Tags: reservation ericsoft ericsoftbooking hotel
 Requires at least: 3.0.1
-Tested up to: 5.0.3
-Stable tag: 5.0
+Tested up to: 5.1
+Stable tag: 5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,7 @@ As simple as it gets:
 
 1. Upload the plugin
 2. Activate it
-3. Configure it by setting the 4 option fields under Settings -> Visa EricSoft Booking
+3. Configure it by setting the option fields under Settings -> Visa EricSoft Booking
 4. Place [veb_display_form] shortcode wherever you want
 
 == Frequently Asked Questions ==

@@ -1,0 +1,23 @@
+{
+  "name": "veb-public",
+  "version": "1.0.0",
+  "description": "Visa EricSoft Booking",
+  "main": "veb-public.js",
+  "author": "Gabriele Coquillard",
+  "license": "GPL-2.0-or-later",
+  "dependencies": {
+    "angular": "^1.7.7",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "ng-annotate": "^1.2.2",
+    "uglify-js": "^3.4.9",
+    "watchify": "^3.11.0"    
+  },
+  "scripts": {
+    "watch": "watchify src.js -o veb-public.js -v",
+    "annotate": "ng-annotate -a src.js -o src.js ",
+    "build": "uglifyjs -m -c -o veb-public.min.js veb-public.js"
+  }
+}

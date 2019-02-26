@@ -1,0 +1,229 @@
+#veb
+{
+    max-width: 1200px;
+    margin:auto;
+}
+
+#veb label
+{
+    display:block;
+    font-size: 14px;
+    color:#666666;
+}
+#veb label.validation-error
+{
+    font-weight: bold;
+    color: red;
+}
+
+#veb .veb_dates
+{
+    float: left;
+    width: -webkit-calc(-webkit-calc(100% / 3) * 2);
+    width: -moz-calc(-moz-calc(100% / 3) * 2);
+    width: calc(calc(100% / 3) * 2);
+    width: -webkit-calc((100% / 3) * 2);
+    width: -moz-calc((100% / 3) * 2);
+    width: calc((100% / 3) * 2);
+    margin-bottom: 40px;
+}
+#veb .veb_dates .veb_date
+{
+    float: left;
+    width: -webkit-calc(50% - 20px);
+    width: -moz-calc(50% - 20px);
+    width: calc(50% - 20px);
+}
+#veb .veb_dates .veb_date input[type=date]
+{
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #666;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+#veb .veb_dates .veb_date.veb_date_arrival
+{
+    margin-right: 20px;
+}
+#veb .veb_dates .veb_date.veb_date_depart
+{
+    margin-right: 0;
+}
+
+#veb .veb_rooms_controls
+{
+    float: left;
+    width: -webkit-calc(-webkit-calc(100% / 3) * 1);
+    width: -moz-calc(-moz-calc(100% / 3) * 1);
+    width: calc(calc(100% / 3) * 1);
+    width: -webkit-calc((100% / 3) * 1);
+    width: -moz-calc((100% / 3) * 1);
+    width: calc((100% / 3) * 1);
+    margin-bottom: 40px;
+}
+#veb .veb_rooms_controls input[type=number],
+#veb .veb_rooms_controls input[type=text]
+{
+    font-size: 18px;
+    line-height: 30px;
+    width: 3em;
+    padding: 8px;
+    border: 1px solid #666;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-right:10px;
+    display: inline-block;
+    text-align: center;
+}
+#veb .veb_rooms_controls input[type=button]
+{
+    border: 1px solid #666666;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em;
+    padding: .3em 1em;
+    -webkit-transition: color 300ms ease 0ms,background-color 300ms ease 0ms;
+    -o-transition: color 300ms ease 0ms,background-color 300ms ease 0ms;
+    -moz-transition: color 300ms ease 0ms,background-color 300ms ease 0ms;
+    transition: color 300ms ease 0ms,background-color 300ms ease 0ms;
+    margin-right:10px;
+    display: inline-block;
+}
+#veb .veb_rooms_controls input[type=button]:last-of-type{
+    margin-right:0;
+}
+
+#veb .veb_rooms
+{
+    clear: both;
+    margin-bottom: 40px;
+}
+#veb .veb_rooms .veb_room
+{
+    margin-bottom: 10px;
+}
+#veb .veb_rooms .veb_room .people
+{
+    display: inline-block;
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: calc(100% / 3);
+}
+#veb .veb_rooms .veb_room .people > label
+{
+    font-weight: bold;
+    margin-right: 20px;
+    border-bottom: 1px solid #666666;
+    display: block;
+    margin-bottom: 10px;
+}
+#veb .veb_rooms .veb_room .people .adults,
+#veb .veb_rooms .veb_room .people .children,
+#veb .veb_rooms .veb_room .people .babies
+{
+    width:-webkit-calc(-webkit-calc(100% / 3) - 3px);
+    width:-moz-calc(-moz-calc(100% / 3) - 3px);
+    width:calc(calc(100% / 3) - 3px);
+    width:-webkit-calc((100% / 3) - 3px);
+    width:-moz-calc((100% / 3) - 3px);
+    width:calc((100% / 3) - 3px);
+    display:inline-block;
+    margin-bottom: 10px;
+}
+#veb .veb_rooms .veb_room .people select
+{
+    font-size: 18px;
+    line-height: 30px;
+    width: 3em;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #666;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#veb .veb_coupon
+{
+    clear: both;
+    width: 50%;
+    margin-bottom: 40px;
+}
+#veb .veb_coupon input[type=text]
+{
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #666;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+#veb .veb_submit
+{
+    margin-bottom: 30px;
+}
+#veb .veb_submit input[type=submit]
+{
+    border: 1px solid #666666;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em;
+    padding: .3em 1em;
+    -webkit-transition: color 300ms ease 0ms,background-color 300ms ease 0ms;
+    -o-transition: color 300ms ease 0ms,background-color 300ms ease 0ms;
+    -moz-transition: color 300ms ease 0ms,background-color 300ms ease 0ms;
+    transition: color 300ms ease 0ms,background-color 300ms ease 0ms;
+}
+#veb .veb_submit label
+{
+    display: block;
+}
+
+@media (max-width:768px)
+{
+    #veb .veb_dates
+    {
+        width: 100%;
+    }
+    #veb .veb_dates .veb_date
+    {
+        width: 100%;
+    }
+    #veb .veb_dates .veb_date.veb_date_arrival,
+    #veb .veb_dates .veb_date.veb_date_depart
+    {
+        margin-right: 0;
+    }
+    #veb .veb_rooms_controls,
+    #veb .veb_rooms .veb_room .people
+    {
+        width: 100%;
+    }
+    #veb .veb_rooms .veb_room .people .adults,
+    #veb .veb_rooms .veb_room .people .children
+    #veb .veb_rooms .veb_room .people .babies
+    {
+        display: inline-block;
+        width: -webkit-calc(-webkit-calc(100% / 3) - 5px);
+        width: -moz-calc(-moz-calc(100% / 3) - 5px);
+        width: calc(calc(100% / 3) - 5px);
+        width: -webkit-calc((100% / 3) - 5px);
+        width: -moz-calc((100% / 3) - 5px);
+        width: calc((100% / 3) - 5px);
+    }
+    #veb .veb_coupon
+    {
+        width: 100%;
+    }
+}

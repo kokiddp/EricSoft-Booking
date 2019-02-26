@@ -65,7 +65,7 @@ var _ = require('lodash');
             $scope.submit = {
                 idh: veb_options.idh,
                 cur: 'EUR',
-                lang: 0,
+                lang: 'it',
                 pax: '',
             }
 
@@ -106,10 +106,13 @@ var _ = require('lodash');
             $scope.submitForm = function(){
                 $scope.submit.arrival = $scope.internal.arrival.format('YYYY-MM-DD');
                 $scope.submit.departure = $scope.internal.depart.format('YYYY-MM-DD');
-                _.forEach($scope.form.rooms, function(value){
-                    $scope.submit.pax += value.adulti + '_' + value.bambini + '_' + value.neonati + '%7C';
+
+                $scope.submit.pax = '';
+                _.forEach($scope.form.rooms, function(room){
+                    $scope.submit.pax += room.adulti + '_' + room.bambini + '_' + room.neonati + '%7C';
                 });
-                $scope.submit.pax = $scope.submit.pax.slice(0, -3);
+                $scope.submit.pax = $scope.submit.pax.substring(0, $scope.submit.pax.length-3);
+
                 $scope.internal.queryString = _.reduce($scope.submit, function(result, value, key) { return (!_.isNull(value) && !_.isUndefined(value)) ? (result += key + '=' + value + '&') : result; }, '').slice(0, -1);
                 $window.open($scope.internal.url+'?'+$scope.internal.queryString);
             }

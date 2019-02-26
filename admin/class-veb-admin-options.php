@@ -99,7 +99,7 @@ class Veb_Admin_Options {
 	 *
 	 * @return void
 	 */
-	public function veb_setting_albergo() {
+	public function veb_setting_idh() {
 		echo "<input type='text' id='veb_idh' name='veb_options[idh]' value='{$this->options['idh']}' />";
 	}
 

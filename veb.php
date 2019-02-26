@@ -41,7 +41,7 @@ define( 'VEB_VERSION', '1.0.0' );
  * Current environment state.
  *
  */
-define( 'VEB_ENVIRONMENT', 'production' );
+define( 'VEB_ENVIRONMENT', 'development' );
 
 /**
  * The code that runs during plugin activation.

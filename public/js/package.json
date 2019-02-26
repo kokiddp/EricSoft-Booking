@@ -13,7 +13,7 @@
   "devDependencies": {
     "ng-annotate": "^1.2.2",
     "uglify-js": "^3.4.9",
-    "watchify": "^3.11.0"    
+    "watchify": "^3.11.1"
   },
   "scripts": {
     "watch": "watchify src.js -o veb-public.js -v",

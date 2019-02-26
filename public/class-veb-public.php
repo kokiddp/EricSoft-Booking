@@ -111,8 +111,7 @@ class Veb_Public {
 
 		$option_array = array(
 			'url' => $this->options['url'],
-			'Albergo' => $this->options['albergo'],
-			'OidPortaleXAlbergo' => $this->options['oid_portale_x_albergo'],
+			'idh' => $this->options['idh'],
 			'minNights' => $this->options['min_nights'],
 			'maxRooms' => $this->options['max_rooms'],
 			'maxPeople' => $this->options['max_people'],

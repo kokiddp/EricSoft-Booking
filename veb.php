@@ -16,7 +16,7 @@
  * Plugin Name:       Visa EricSoft Booking
  * Plugin URI:        http://www.visamultimedia.com/
  * Description:       This plugin integrates a EricSoft Booking reservation form.
- * Version:           1.0.0
+ * Version:           1.0.2
  * Author:            VisaMultimedia
  * Author URI:        http://www.visamultimedia.com/
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'VEB_VERSION', '1.0.0' );
+define( 'VEB_VERSION', '1.0.2' );
 
 /**
  * Current environment state.

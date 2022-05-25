@@ -10,7 +10,7 @@ var _ = require('lodash');
 	 * On DOM ready:
 	 */
 	$(function() {	
-        console.log('Visa EricSoft Booking by Gabriele Coquillard @ VisaMultimedia');
+        console.log('EricSoft Booking by Gabriele Coquillard');
         moment.locale('it');
 	});
 
@@ -51,6 +51,7 @@ var _ = require('lodash');
                 rooms: [{
                     id: 0,
                     adulti: parseInt(veb_options.defaultAdults),
+                    ragazzi: 0,
                     bambini: 0,
                     neonati: 0,
                     minAdulti: parseInt(veb_options.minAdultsFirstRoom),
@@ -88,10 +89,13 @@ var _ = require('lodash');
                 $scope.form.rooms.push({
                     id: _.last($scope.form.rooms).id+1,
                     adulti: parseInt(veb_options.defaultAdults),
+                    ragazzi: 0,
                     bambini: 0,
                     neonati: 0,
                     minAdulti: parseInt(veb_options.minAdultsOtherRooms),
                     maxAdulti: parseInt(veb_options.maxPeople),
+                    minRagazzi: 0,
+                    maxRagazzi: parseInt(veb_options.maxPeople),
                     minBambini: 0,
                     maxBambini: parseInt(veb_options.maxPeople),
                     minNeonati: 0,
@@ -109,7 +113,7 @@ var _ = require('lodash');
 
                 $scope.submit.pax = '';
                 _.forEach($scope.form.rooms, function(room){
-                    $scope.submit.pax += room.adulti + '_' + room.bambini + '_' + room.neonati + '%7C';
+                    $scope.submit.pax += room.adulti + '_' + room.ragazzi + '_'+ room.bambini + '_' + room.neonati + '%7C';
                 });
                 $scope.submit.pax = $scope.submit.pax.substring(0, $scope.submit.pax.length-3);
 

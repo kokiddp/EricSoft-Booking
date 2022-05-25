@@ -13,12 +13,12 @@
  * @package           Veb
  *
  * @wordpress-plugin
- * Plugin Name:       Visa EricSoft Booking
- * Plugin URI:        http://www.visamultimedia.com/
+ * Plugin Name:       EricSoft Booking
+ * Plugin URI:        http://www.elk-lab.com/
  * Description:       This plugin integrates a EricSoft Booking reservation form.
- * Version:           1.0.2
- * Author:            VisaMultimedia
- * Author URI:        http://www.visamultimedia.com/
+ * Version:           1.1.0
+ * Author:            Gabriele Coquillard
+ * Author URI:        http://www.elk-lab.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       visa-ericsoft-booking
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'VEB_VERSION', '1.0.2' );
+define( 'VEB_VERSION', '1.1.0' );
 
 /**
  * Current environment state.

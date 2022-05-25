@@ -96,15 +96,19 @@ class Veb_Public_Shortcodes {
 							<label><?= __( 'Room ', 'visa-ericsoft-booking' ) ?>{{(x.id) + 1}}</label>
 							<div class="adults clearfix">
 								<label><?= __( 'Adults', 'visa-ericsoft-booking' ) ?></label>
-								<select ng-model="x.adulti" ng-options="n for n in [] | range:x.minAdulti:(x.maxAdulti - x.bambini - x.neonati)"></select>
+								<select ng-model="x.adulti" ng-options="n for n in [] | range:x.minAdulti:(x.maxAdulti - x.ragazzi - x.bambini - x.neonati)"></select>
+							</div>
+							<div class="adults clearfix">
+								<label><?= __( 'Youngs', 'visa-ericsoft-booking' ) ?></label>
+								<select ng-model="x.ragazzi" ng-options="n for n in [] | range:x.minRagazzi:(x.maxRagazzi - x.adulti - x.bambini - x.neonati)"></select>
 							</div>
 							<div class="children clearfix">
 								<label><?= __( 'Children', 'visa-ericsoft-booking' ) ?></label>
-								<select ng-model="x.bambini" ng-options="n for n in [] | range:x.minBambini:(x.maxBambini - x.adulti - x.neonati)"></select>
+								<select ng-model="x.bambini" ng-options="n for n in [] | range:x.minBambini:(x.maxBambini - x.adulti - x.ragazzi - x.neonati)"></select>
 							</div>
 							<div class="babies clearfix">
 								<label><?= __( 'Babies', 'visa-ericsoft-booking' ) ?></label>
-								<select ng-model="x.neonati" ng-options="n for n in [] | range:x.minNeonati:(x.maxNeonati - x.adulti - x.bambini)"></select>
+								<select ng-model="x.neonati" ng-options="n for n in [] | range:x.minNeonati:(x.maxNeonati - x.adulti - x.ragazzi - x.bambini)"></select>
 							</div>
 						</div>
 					</div>

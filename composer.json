@@ -1,15 +1,15 @@
 {
-	"name": "visamultimedia/veb",
+	"name": "kokiddp/ericsoft-booking",
 
-	"description": "Visa EricSoft Booking",
+	"description": "EricSoft Booking",
 
 	"license": ["GPL-2.0-or-later"],
 
 	"authors": [
 		{
 			"name": "Gabriele Coquillard",
-			"email": "gabriele@visamultimedia.com",
-			"homepage": "http://www.visamultimedia.com",
+			"email": "gabriele@elk-lab.com",
+			"homepage": "http://www.elk-lab.com",
 			"role": "Developer, maintainer"
 		}
 	],

@@ -16,7 +16,7 @@
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
 
 <div class="wrap">
-    <h1><?= __('Visa EricSoft Booking', 'visa-ericsoft-booking') ?></h1>
+    <h1><?= __('EricSoft Booking', 'visa-ericsoft-booking') ?></h1>
 
     <form method="post" action="options.php">
         <?php settings_fields('veb_options'); ?>

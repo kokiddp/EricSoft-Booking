@@ -43,7 +43,7 @@ class Veb_Admin_Options {
 	 * @return void
 	 */
 	public function veb_add_options_page() {
-		add_options_page( __('Visa EricSoft Booking', 'visa-ericsoft-booking'), __('Visa EricSoft Booking', 'visa-ericsoft-booking'), 'manage_options', 'veb', array( $this, 'veb_options_page' ) );
+		add_options_page( __('EricSoft Booking', 'visa-ericsoft-booking'), __('EricSoft Booking', 'visa-ericsoft-booking'), 'manage_options', 'veb', array( $this, 'veb_options_page' ) );
 	}
 
 	/**

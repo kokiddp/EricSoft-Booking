@@ -59681,6 +59681,8 @@ var _ = require('lodash');
                     neonati: 0,
                     minAdulti: parseInt(veb_options.minAdultsFirstRoom),
                     maxAdulti: parseInt(veb_options.maxPeople),
+                    minRagazzi: 0,
+                    maxRagazzi: parseInt(veb_options.maxPeople),
                     minBambini: 0,
                     maxBambini: parseInt(veb_options.maxPeople),
                     minNeonati: 0,

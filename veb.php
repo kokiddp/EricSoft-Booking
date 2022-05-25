@@ -16,7 +16,7 @@
  * Plugin Name:       EricSoft Booking
  * Plugin URI:        http://www.elk-lab.com/
  * Description:       This plugin integrates a EricSoft Booking reservation form.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Author:            Gabriele Coquillard
  * Author URI:        http://www.elk-lab.com/
  * License:           GPL-2.0+
@@ -35,13 +35,13 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'VEB_VERSION', '1.1.0' );
+define( 'VEB_VERSION', '1.1.1' );
 
 /**
  * Current environment state.
  *
  */
-define( 'VEB_ENVIRONMENT', 'production' );
+define( 'VEB_ENVIRONMENT', 'development' );
 
 /**
  * The code that runs during plugin activation.
